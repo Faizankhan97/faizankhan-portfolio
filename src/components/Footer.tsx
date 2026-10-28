@@ -1,8 +1,11 @@
 "use client";
 
+import { use } from "react";
+import { io } from "next/cache";
 import { Github, Linkedin, Code2 } from "lucide-react";
 
 const Footer = () => {
+  use(io());
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
