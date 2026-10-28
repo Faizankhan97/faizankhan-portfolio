@@ -1,13 +1,8 @@
 "use client";
 
-import { use } from "react";
-import { io } from "next/cache";
 import { Github, Linkedin, Code2 } from "lucide-react";
 
 const Footer = () => {
-  use(io());
-  const currentYear = new Date().getFullYear();
-
   const socialLinks = [
     {
       href: "https://github.com/Faizankhan97",
@@ -61,8 +56,8 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-slate-600 text-sm">
-            <span aria-label={`Copyright ${currentYear} Faizan Khan`}>
-              &copy; {currentYear}{" "}
+            <span aria-label={`Copyright 2026 Faizan Khan`}>
+              &copy; 2026{" "}
               <span className="text-slate-500 font-medium">Faizan Khan</span>.
               All rights reserved.
             </span>
